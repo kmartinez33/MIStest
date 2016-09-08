@@ -6,7 +6,7 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
+            "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
             "program": "${file}",
             "debugOptions": [
                 "WaitOnAbnormalExit",
@@ -19,7 +19,7 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
+            "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
             "program": "${file}",
             "externalConsole": true,
             "debugOptions": [

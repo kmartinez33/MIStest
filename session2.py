@@ -35,3 +35,17 @@ minute=45 #CURRENT time
 percentage=(minute*100) / 60
 print(percentage)
 print(11 % 5) # this will only give you the remainder of the division.
+##########EXCERCISE############
+pi=3.14
+r=5
+print((4/3)*pi*r**3)
+discount_book= 24.95*.6
+shipping= 3+.75*59
+print(discount_book+shipping)
+Tempo_time=3*7.2
+easy_time=2*8.25
+sum=easy_time+Tempo_time
+Last_time=sum-8
+print('7:%d' % Last_time)
+increase=((89-82)/82)*100
+print('Average Grade raises by %.2f%%' % increase)
