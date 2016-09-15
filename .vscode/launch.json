@@ -5,7 +5,7 @@
             "name": "Python",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
+            "stopOnEntry": false,
             "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
             "program": "${file}",
             "debugOptions": [
@@ -18,10 +18,10 @@
             "name": "Python Console App",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
+            "stopOnEntry": false,
             "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
             "program": "${file}",
-            "externalConsole": true,
+            "externalConsole": false,
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit"
@@ -31,7 +31,7 @@
             "name": "Django",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
+            "stopOnEntry": false,
             "pythonPath": "${config.python.pythonPath}",
             "program": "${workspaceRoot}/manage.py",
             "args": [
@@ -49,7 +49,7 @@
             "name": "Watson",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
+            "stopOnEntry": false,
             "pythonPath": "${config.python.pythonPath}",
             "program": "${workspaceRoot}/console.py",
             "args": [
