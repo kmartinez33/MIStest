@@ -15,13 +15,26 @@
             ]
         },
         {
-            "name": "Python Console App",
+            "name": "Integrated Terminal/Console",
             "type": "python",
             "request": "launch",
             "stopOnEntry": false,
             "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
             "program": "${file}",
-            "externalConsole": false,
+            "console": "integratedTerminal",
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit"
+            ]
+        },
+        {
+            "name": "External Terminal/Console",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
+            "program": "${file}",
+            "console": "externalTerminal",
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit"
@@ -31,8 +44,8 @@
             "name": "Django",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": false,
-            "pythonPath": "${config.python.pythonPath}",
+            "stopOnEntry": true,
+            "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
             "program": "${workspaceRoot}/manage.py",
             "args": [
                 "runserver",
@@ -46,11 +59,25 @@
             ]
         },
         {
+            "name": "Flask",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
+            "program": "${workspaceRoot}/run.py",
+            "args": [],
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]
+        },
+        {
             "name": "Watson",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": false,
-            "pythonPath": "${config.python.pythonPath}",
+            "stopOnEntry": true,
+            "pythonPath": "C:/Users/kmartinez3/AppData/Local/Programs/Python/Python35/python.exe",
             "program": "${workspaceRoot}/console.py",
             "args": [
                 "dev",
@@ -64,7 +91,7 @@
             ]
         },
         {
-            "name": "Attach",
+            "name": "Attach (Remote Debug)",
             "type": "python",
             "request": "attach",
             "localRoot": "${workspaceRoot}",

@@ -7,7 +7,7 @@ def quadratic():
     formula = b**2 - 4*a*c #b squared-4ac
     b_value = sqrt(formula) #value of the discriminant
     positive_value = (-b + b_value)/ (2*a) # there is a positve value and a negative value for answer
-    if positive_value >= 0:
+     if positive_value >= 0:
         pass
     negative_value = (-b - b_value)/ (2*a)
     if negative_value <= 1:
