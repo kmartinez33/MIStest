@@ -45,7 +45,7 @@ print(leap_year(2000))
 #1 and n (inclusive).
 
 def sum_squares(n):
-    for i in range(1,n+n):
+    for i in range(1,n+1):
         result = i*i
     return result
 
