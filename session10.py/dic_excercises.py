@@ -33,3 +33,15 @@ for i in range (1,10):
 #global variables can be written inside the function
 
 #### Excercise 4 ####
+flowers = ['Tulips', 'Tulips', 'Roses','Sunflower', 'Daisy', 'Orchid']
+
+def has_duplicates(list):
+    dict = {}
+    for i in list:
+        dict[i] = 1 + dict.get(i,0)
+        if dict[i] > 1:
+            return True
+        else:
+            return False
+print(has_duplicates(flowers))
+flowers = ['Tulips', 'Tulips', 'Roses','Sunflower', 'Daisy', 'Orchid']
