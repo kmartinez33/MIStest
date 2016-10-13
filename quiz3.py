@@ -7,10 +7,9 @@ def replace_even(data):
     No return is required.
     data: the list of values to process'''
 
-    for i in data:
-        if i % 2 == 0:
-            data.remove(i)
-        print(data)
+    for i in range(len(ONE_TEN)):
+        if i % 2 != 0:
+            ONE_TEN[i]=0
 
 # Uncomment the following lines to test
 ONE_TEN = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -25,11 +24,17 @@ def remove_middle(data):
     No return is required.
     data: the list of values to process
     '''
+    if len(data) % 2 == 0:
+        data.pop(int(len(data)/2 - 1))
+        data.pop(int(len(data)// 2))
+    else:
+        data.pop(len(data)// 2)
+
 
 # Uncomment the following lines to test
-# ONE_TEN = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# remove_middle(ONE_TEN)
-# print(ONE_TEN)
+ONE_TEN = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+remove_middle(ONE_TEN)
+print(ONE_TEN)
 
 
 def insert_integer(data, number):
@@ -42,12 +47,11 @@ def insert_integer(data, number):
     return: a new list of sorted integers with previous numbers and 
     the new number
     '''
-    for i in data:
-        data.remove(i)
-    elif i in number:
-        number.insert(i)
-
-
+    for i in range(len(data)):
+        if data[i] > number:
+            data.insert(i, number)
+            break
+    return data
 
 # Uncomment the following lines to test
 data = [1, 3, 40, 75, 90, 2000, 2001, 2016]
@@ -71,4 +75,10 @@ def print_hist(data):
     C: ******
     Z: ********
     '''
-    pass
+    key_list = data.keys()
+    key_list.sort()
+    for key in key_list:
+        num_ast = data.get(key)
+        print('%s: ' % (key)+ num_ast * '*')
+
+letter_counts = {'C': }
